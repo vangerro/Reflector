@@ -1,0 +1,83 @@
+name: reflector
+description: "Record, review, and improve with your private video journal for self-reflection and growth."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # UI & Internationalization
+  cupertino_icons: ^1.0.6
+  intl: ^0.19.0
+
+  # Video & Camera
+  camera: ^0.10.5+9
+  video_player: ^2.8.2
+  image_picker: ^1.0.7
+  video_thumbnail: ^0.5.3
+
+  # Storage & Database
+  sqflite: ^2.3.2
+  path_provider: ^2.1.2
+  path: ^1.8.3
+
+  # State Management (Optional - kannst du später entscheiden)
+  # provider: ^6.1.1
+  # flutter_bloc: ^8.1.4
+
+  # Permissions
+  permission_handler: ^11.3.0
+
+  # Gallery & Media
+  # Using share_plus for saving to gallery (more modern and maintained)
+  share_plus: ^7.2.1
+
+  # Utils
+  uuid: ^4.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+  sqflite_common_ffi: ^2.3.3
+  path_provider_platform_interface: ^2.1.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.jpg"
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/images/
+
+  # Fonts (Optional)
+  # fonts:
+  #   - family: CustomFont
+  #     fonts:
+  #       - asset: assets/fonts/CustomFont-Regular.ttf
